@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Activa tu Velocidad Real. Programa de 30 días para más velocidad, potencia y rendimiento atlético. Sistema Ventaja.">
+  <title>Sistema Ventaja — Activa Tu Velocidad Real</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700;1,900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css?v=5">
+</head>
+<body>
+  <svg class="svg-sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="icon-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 2v4M8 2v4M3 10h18" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="icon-lightning" viewBox="0 0 24 24"><path d="M13 2L3 14h8l-1 8 10-12h-8l1-8z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-run" viewBox="0 0 24 24"><circle cx="14" cy="5" r="2" fill="currentColor"/><path d="M11 11l-2 7M11 11l4-2 3 4M11 11l-3-1-3 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="1" fill="currentColor"/></symbol>
+    <symbol id="icon-chart" viewBox="0 0 24 24"><path d="M4 19V5M4 19h16M8 17V11M12 17V7M16 17v-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="icon-video" viewBox="0 0 24 24"><rect x="2" y="5" width="15" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M17 9l5-3v12l-5-3V9z" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="icon-infinity" viewBox="0 0 24 24"><path d="M6 12c0-2.5 1.5-4 3.5-4s3 1.5 3 4-1 4-3 4-3.5-1.5-3.5-4zm9 0c0-2.5 1.5-4 3.5-4s3 1.5 3 4-1 4-3 4-3.5-1.5-3.5-4z" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M11 18h2" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="icon-refresh" viewBox="0 0 24 24"><path d="M21 12a9 9 0 11-2.64-6.36M21 3v6h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-gift" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="13" rx="1" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 8v13M3 12h18M12 8c-2 0-3-1-3-3s2-3 4-1c2-2 4-1 4 1s-1 3-3 3" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="icon-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></symbol>
+    <symbol id="icon-flag" viewBox="0 0 24 24"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#hero">Saltar al contenido</a>
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+
+  <div class="sticky-cta" id="stickyCta" aria-hidden="true">
+    <div class="sticky-cta-info">
+      <div class="sticky-cta-label">Precio de lanzamiento</div>
+      <div class="sticky-cta-price">$19.990</div>
+    </div>
+    <button type="button" class="btn-sm cta-trigger">UNIRME</button>
+  </div>
+
+  <nav>
+    <div class="nav-logo">SISTEMA <span>VENTAJA</span></div>
+    <button type="button" class="nav-cta cta-trigger">UNIRME</button>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-media" id="heroMedia" aria-hidden="true">
+        <video
+          class="hero-video"
+          id="heroVideo"
+          src="assets/video/hero-bg.mp4?v=4"
+          autoplay
+          muted
+          loop
+          playsinline
+          webkit-playsinline
+          preload="metadata"
+          disablepictureinpicture
+          disableremoteplayback
+          poster="assets/images/hero-poster.jpg"
+        ></video>
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-overlay" aria-hidden="true"></div>
+      </div>
+      <div class="speed-lines" id="speedLines" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-slash" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <div class="hero-eyebrow">Sistema de Entrenamiento</div>
+        <h1 class="hero-headline" aria-label="Activa tu Velocidad Real">
+          <span class="hero-headline__line">ACTIVA TU</span>
+          <span class="hero-headline__line hero-headline__accent">VELOCIDAD</span>
+          <span class="hero-headline__line hero-headline__real">REAL</span>
+        </h1>
+        <p class="hero-sub">Un sistema de 30 días para reaccionar más rápido, moverte con más explosividad y correr a otro nivel.</p>
+        <div class="hero-cta-wrap">
+          <button type="button" class="btn-primary cta-trigger"><svg class="icon" aria-hidden="true"><use href="#icon-lightning"></use></svg> UNIRME AL RETO</button>
+          <p class="trust-mp"><svg class="icon icon-sm" aria-hidden="true"><use href="#icon-check"></use></svg> Pago seguro con Mercado Pago</p>
+        </div>
+      </div>
+
+      <div class="stats-bar stats-bar--hero" aria-hidden="true">
+        <div class="stats-ticker">
+          <div class="stats-ticker-inner">
+            <div class="stat-item"><span class="dot"></span> 30 DÍAS DE PROGRAMA</div>
+            <div class="stat-item"><span class="dot"></span> 2 A 4 SESIONES POR SEMANA</div>
+            <div class="stat-item"><span class="dot"></span> SOLO 100 ACCESOS</div>
+            <div class="stat-item"><span class="dot"></span> VELOCIDAD · EXPLOSIVIDAD · REACCIÓN</div>
+            <div class="stat-item"><span class="dot"></span> PRECIO DE LANZAMIENTO</div>
+            <div class="stat-item"><span class="dot"></span> 30 DÍAS DE GARANTÍA</div>
+            <div class="stat-item"><span class="dot"></span> ACCESO PARA SIEMPRE</div>
+          </div>
+          <div class="stats-ticker-inner" aria-hidden="true">
+            <div class="stat-item"><span class="dot"></span> 30 DÍAS DE PROGRAMA</div>
+            <div class="stat-item"><span class="dot"></span> 2 A 4 SESIONES POR SEMANA</div>
+            <div class="stat-item"><span class="dot"></span> SOLO 100 ACCESOS</div>
+            <div class="stat-item"><span class="dot"></span> VELOCIDAD · EXPLOSIVIDAD · REACCIÓN</div>
+            <div class="stat-item"><span class="dot"></span> PRECIO DE LANZAMIENTO</div>
+            <div class="stat-item"><span class="dot"></span> 30 DÍAS DE GARANTÍA</div>
+            <div class="stat-item"><span class="dot"></span> ACCESO PARA SIEMPRE</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOUNDER -->
+    <section id="founder">
+      <div class="container founder-content founder-content--minimal">
+        <div class="section-eyebrow reveal">Entrena con Samuel</div>
+        <h2 class="section-title section-title--spacious reveal">ENTRENA CON<br><span class="red italic">VENTAJA</span></h2>
+        <p class="founder-lead reveal">Después de miles de mensajes preguntándome cómo entreno mi velocidad, decidí abrir el sistema al público por tiempo limitado.</p>
+        <div class="video-placeholder founder-video visible" id="founderVideo" role="button" tabindex="0" aria-label="Reproducir video del fundador">
+          <video src="assets/video/founder.mp4?v=4" playsinline webkit-playsinline preload="none" poster="assets/images/founder-poster.jpg"></video>
+          <div class="founder-video__shade" aria-hidden="true"></div>
+          <div class="video-play-btn" aria-hidden="true"><svg class="icon icon-lg"><use href="#icon-play"></use></svg></div>
+          <div class="video-label">Samuel explica el programa</div>
+        </div>
+        <div class="founder-sig reveal">
+          <div class="founder-avatar">S</div>
+          <div>
+            <div class="founder-name">Samuel</div>
+            <div class="founder-title-sub">Fundador · Sistema Ventaja</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials">
+      <div class="container">
+        <div class="section-eyebrow reveal">Resultados reales</div>
+        <h2 class="section-title section-title--compact reveal">LO QUE DICEN QUIENES YA<br><span class="red italic">ENTRENAN CON VENTAJA</span></h2>
+        <div class="testimonials-grid">
+          <article class="testimonial-card reveal">
+            <div class="testimonial-video" role="button" tabindex="0" aria-label="Reproducir testimonio 1">
+              <video src="assets/video/testimonial-1.mp4?v=4" playsinline webkit-playsinline preload="none"></video>
+              <div class="testimonial-video__play" aria-hidden="true"><svg class="icon icon-lg"><use href="#icon-play"></use></svg></div>
+              <div class="testimonial-video__shade" aria-hidden="true"></div>
+              <span class="testimonial-video__label">Toca para escuchar</span>
+            </div>
+          </article>
+          <article class="testimonial-card reveal">
+            <div class="testimonial-video" role="button" tabindex="0" aria-label="Reproducir testimonio 2">
+              <video src="assets/video/testimonial-2.mp4?v=4" playsinline webkit-playsinline preload="none"></video>
+              <div class="testimonial-video__play" aria-hidden="true"><svg class="icon icon-lg"><use href="#icon-play"></use></svg></div>
+              <div class="testimonial-video__shade" aria-hidden="true"></div>
+              <span class="testimonial-video__label">Toca para escuchar</span>
+            </div>
+          </article>
+          <article class="testimonial-card reveal">
+            <div class="testimonial-video" role="button" tabindex="0" aria-label="Reproducir testimonio 3">
+              <video src="assets/video/testimonial-3.mp4?v=4" playsinline webkit-playsinline preload="none"></video>
+              <div class="testimonial-video__play" aria-hidden="true"><svg class="icon icon-lg"><use href="#icon-play"></use></svg></div>
+              <div class="testimonial-video__shade" aria-hidden="true"></div>
+              <span class="testimonial-video__label">Toca para escuchar</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how">
+      <div class="container">
+        <div class="section-eyebrow reveal">El proceso</div>
+        <h2 class="section-title section-title--compact reveal">ASÍ FUNCIONA<br><span class="red">VENTAJA</span></h2>
+        <div class="steps-list steps-list--compact">
+          <div class="step-item reveal">
+            <div class="step-num">01</div>
+            <div class="step-body">
+              <div class="step-title">Acceso inmediato</div>
+              <div class="step-desc">En segundos tienes acceso completo al sistema. Sin esperas, sin complicaciones.</div>
+            </div>
+          </div>
+          <div class="step-item reveal">
+            <div class="step-num">02</div>
+            <div class="step-body">
+              <div class="step-title">Elige tu nivel</div>
+              <div class="step-desc">El programa ya está estructurado. Tú solo ejecutas día a día según tu nivel — sin adivinar.</div>
+            </div>
+          </div>
+          <div class="step-item reveal">
+            <div class="step-num">03</div>
+            <div class="step-body">
+              <div class="step-title">Entrena 2–4 veces por semana</div>
+              <div class="step-desc">Sesiones cortas e intensas para maximizar velocidad y explosividad sin entrenar de más.</div>
+            </div>
+          </div>
+          <div class="step-item reveal">
+            <div class="step-num">04</div>
+            <div class="step-body">
+              <div class="step-title">Mejora velocidad y explosividad</div>
+              <div class="step-desc">En 30 días sientes la diferencia. Reaccionas más rápido — con más confianza, más rapidez y más atlético.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALUE STACK + PRICING -->
+    <section id="offer">
+      <div class="container offer-stack">
+        <div class="section-eyebrow section-eyebrow--impact reveal text-center">Todo lo que incluye</div>
+        <h2 class="section-title section-title--impact reveal text-center">EL SISTEMA<br><span class="red italic">COMPLETO</span></h2>
+
+        <div class="pricing-stack pricing-stack--compact">
+          <article class="pricing-item reveal">
+            <div class="pricing-item-icon"><svg class="icon"><use href="#icon-calendar"></use></svg></div>
+            <div class="pricing-item-content">
+              <div class="pricing-item-head">
+                <h3 class="pricing-item-title">Sistema completo de 30 días</h3>
+                <div class="pricing-value">
+                  <span class="price-amount struck-value">$22.000</span>
+                  <span class="price-strike" aria-hidden="true"></span>
+                </div>
+              </div>
+              <p class="pricing-item-desc">Programa diario estructurado.</p>
+            </div>
+          </article>
+
+          <article class="pricing-item reveal">
+            <div class="pricing-item-icon"><svg class="icon"><use href="#icon-lightning"></use></svg></div>
+            <div class="pricing-item-content">
+              <div class="pricing-item-head">
+                <h3 class="pricing-item-title">Activación neuromuscular y reacción</h3>
+                <div class="pricing-value">
+                  <span class="price-amount struck-value">$14.000</span>
+                  <span class="price-strike" aria-hidden="true"></span>
+                </div>
+              </div>
+              <p class="pricing-item-desc">Activa tu sistema nervioso.</p>
+            </div>
+          </article>
+
+          <article class="pricing-item reveal">
+            <div class="pricing-item-icon"><svg class="icon"><use href="#icon-run"></use></svg></div>
+            <div class="pricing-item-content">
+              <div class="pricing-item-head">
+                <h3 class="pricing-item-title">Trabajo de técnica y movimiento</h3>
+                <div class="pricing-value">
+                  <span class="price-amount struck-value">$12.000</span>
+                  <span class="price-strike" aria-hidden="true"></span>
+                </div>
+              </div>
+              <p class="pricing-item-desc">Mejora tu técnica y eficiencia.</p>
+            </div>
+          </article>
+
+          <article class="pricing-item reveal">
+            <div class="pricing-item-icon"><svg class="icon"><use href="#icon-chart"></use></svg></div>
+            <div class="pricing-item-content">
+              <div class="pricing-item-head">
+                <h3 class="pricing-item-title">Estructura paso a paso</h3>
+                <div class="pricing-value">
+                  <span class="price-amount struck-value">$9.000</span>
+                  <span class="price-strike" aria-hidden="true"></span>
+                </div>
+              </div>
+              <p class="pricing-item-desc">Sesiones claras y progresivas.</p>
+            </div>
+          </article>
+
+          <article class="pricing-item reveal">
+            <div class="pricing-item-icon"><svg class="icon"><use href="#icon-target"></use></svg></div>
+            <div class="pricing-item-content">
+              <div class="pricing-item-head">
+                <h3 class="pricing-item-title">Seguimiento de progreso</h3>
+                <div class="pricing-value">
+                  <span class="price-amount struck-value">$8.000</span>
+                  <span class="price-strike" aria-hidden="true"></span>
+                </div>
+              </div>
+              <p class="pricing-item-desc">Mide tu avance y mantente enfocado.</p>
+            </div>
+          </article>
+
+          <article class="pricing-item reveal">
+            <div class="pricing-item-icon"><svg class="icon"><use href="#icon-video"></use></svg></div>
+            <div class="pricing-item-content">
+              <div class="pricing-item-head">
+                <h3 class="pricing-item-title">Acceso a todo el contenido</h3>
+                <div class="pricing-value">
+                  <span class="price-amount struck-value">$7.000</span>
+                  <span class="price-strike" aria-hidden="true"></span>
+                </div>
+              </div>
+              <p class="pricing-item-desc">Videos explicativos y demostraciones.</p>
+            </div>
+          </article>
+
+          <article class="pricing-item pricing-item--gratis pricing-item--compact reveal">
+            <div class="pricing-item-icon"><svg class="icon"><use href="#icon-infinity"></use></svg></div>
+            <div class="pricing-item-content">
+              <div class="pricing-item-head">
+                <h3 class="pricing-item-title">Acceso para siempre + futuras actualizaciones <span class="tag-gratis">Primeros 100</span></h3>
+                <span class="price-gratis">GRATIS</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="pricing-total pricing-total--impact reveal">
+          <div class="pricing-total-label">Valor total</div>
+          <div class="pricing-total-amount">
+            <span class="price-amount price-amount--xxl struck-value" id="totalValue">$72.000</span>
+            <span class="price-strike price-strike--xl" aria-hidden="true"></span>
+          </div>
+          <p class="pricing-savings" id="savingsLabel">Ahorras <strong>$52.010</strong> hoy</p>
+        </div>
+
+        <div class="pricing-reveal reveal" id="pricingReveal">
+          <div class="pricing-reveal-label"><svg class="icon icon-sm"><use href="#icon-lightning"></use></svg> Precio de lanzamiento</div>
+          <div class="price-current">$19.990</div>
+          <p class="price-sub">CLP · Un solo pago · Acceso inmediato</p>
+          <button type="button" class="btn-cta-large cta-trigger"><svg class="icon"><use href="#icon-lightning"></use></svg> ACEPTO EL RETO</button>
+          <p class="trust-mp trust-mp--center"><svg class="icon icon-sm" aria-hidden="true"><use href="#icon-check"></use></svg> Pago seguro con Mercado Pago</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHIRT BONUS -->
+    <section id="bonus">
+      <div class="container text-center">
+        <div class="bonus-badge reveal"><svg class="icon icon-sm"><use href="#icon-gift"></use></svg> Oferta especial · Primeros 100</div>
+        <h2 class="section-title section-title--compact reveal">ENTRAS AL SORTEO DE<br><span class="red italic">30 CAMISETAS OFICIALES</span></h2>
+        <p class="bonus-text reveal">Si eres uno de los primeros 100, entras automáticamente al sorteo de camisetas oficiales <strong>Reto Ventaja</strong> — más tu plan de 30 días.</p>
+
+        <div class="shirt-stage reveal" id="shirtShowcase">
+          <div class="shirt-spotlight" aria-hidden="true"></div>
+          <div class="shirt-rotate-wrap" id="shirtStage">
+            <div class="shirt-rotate" aria-label="Camiseta oficial Reto Ventaja — frente y espalda">
+              <div class="shirt-face shirt-face--front">
+                <img src="assets/images/camiseta-frente.png?v=4" alt="Frente — SPEED" class="shirt-face-img" id="shirtImage" loading="lazy" decoding="async">
+              </div>
+              <div class="shirt-face shirt-face--back">
+                <img src="assets/images/camiseta-espalda.png?v=4" alt="Espalda — Running con Ventaja" class="shirt-face-img" loading="lazy" decoding="async">
+              </div>
+            </div>
+            <div class="shirt-fallback" aria-hidden="true">
+              <span class="shirt-fallback-label">Camiseta oficial Reto Ventaja</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="shirt-scarcity reveal">
+          <div class="offer-urgency-meta">
+            <span>Cupos limitados</span>
+            <strong id="spotsTakenLabel">0 de 100 ocupados</strong>
+          </div>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar-fill" id="scarcityProgress"></div>
+          </div>
+          <p class="scarcity-remaining">Solo quedan <strong id="spotsLeftBonus">100</strong> lugares</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GUARANTEE -->
+    <section id="guarantee">
+      <div class="container">
+        <div class="guarantee-card reveal">
+          <div class="guarantee-card-icon" aria-hidden="true">
+            <svg class="icon icon-xl"><use href="#icon-shield"></use></svg>
+          </div>
+          <h2 class="guarantee-card-title">GARANTÍA<br><span class="green">VENTAJA</span></h2>
+          <p class="guarantee-card-text">Si después de probar el sistema sientes que no recibiste el valor real de $19.990, puedes escribirnos y te devolvemos el dinero. Sin drama.</p>
+          <ul class="guarantee-card-list">
+            <li><svg class="icon icon-sm"><use href="#icon-check"></use></svg> 30 días para probarlo</li>
+            <li><svg class="icon icon-sm"><use href="#icon-check"></use></svg> Sin preguntas ni complicaciones</li>
+            <li><svg class="icon icon-sm"><use href="#icon-check"></use></svg> Devolución 100% garantizada</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="container">
+        <div class="section-eyebrow reveal">Preguntas frecuentes</div>
+        <h2 class="section-title reveal">¿TIENES<br><span class="red">DUDAS?</span></h2>
+        <div class="faq-list" id="faqList">
+          <div class="faq-item">
+            <button class="faq-q" type="button">¿Necesito equipamiento especial?<span class="faq-arrow"></span></button>
+            <div class="faq-a"><div class="faq-a-inner">No. La mayoría de ejercicios se realizan con el peso corporal. Algunos pueden beneficiarse de conos o bandas, pero no son obligatorios.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button">¿Cuánto tiempo duran las sesiones?<span class="faq-arrow"></span></button>
+            <div class="faq-a"><div class="faq-a-inner">Entre 30 y 50 minutos por sesión. El sistema está diseñado para ser intenso y eficiente, no para pasar horas en el gimnasio.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button">¿Es para cualquier deporte?<span class="faq-arrow"></span></button>
+            <div class="faq-a"><div class="faq-a-inner">Sí. Velocidad, explosividad y tiempo de reacción aplican para fútbol, básquet, tenis, atletismo, artes marciales y cualquier deporte donde el rendimiento físico importa.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button">¿Cuándo puedo empezar?<span class="faq-arrow"></span></button>
+            <div class="faq-a"><div class="faq-a-inner">Inmediatamente después del pago. Acceso instantáneo, 24/7, desde cualquier dispositivo.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button">¿Qué pasa si no veo resultados?<span class="faq-arrow"></span></button>
+            <div class="faq-a"><div class="faq-a-inner">Tienes 30 días de garantía. Si sientes que el programa no valió el precio, te devolvemos el dinero completo. Sin preguntas.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button">¿Es solo para atletas de élite?<span class="faq-arrow"></span></button>
+            <div class="faq-a"><div class="faq-a-inner">Para nada. El sistema funciona para atletas de todos los niveles que quieren mejorar su rendimiento. Si quieres ser más rápido y más explosivo, este programa es para ti.</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section id="final-cta">
+      <div class="final-bg" aria-hidden="true"></div>
+      <div class="final-grid" aria-hidden="true"></div>
+      <div class="final-lines" id="finalLines" aria-hidden="true"></div>
+      <div class="container final-content">
+        <div class="section-eyebrow reveal" style="justify-content:center;">Última llamada</div>
+        <h2 class="final-headline reveal">
+          LA VELOCIDAD<br>
+          NO SE <span class="italic">ESPERA.</span><br>
+          <span class="red">SE ENTRENA.</span>
+        </h2>
+        <p class="final-sub reveal">Solo quedan <strong id="spotsLeftFinal">100</strong> lugares disponibles</p>
+        <div class="reveal">
+          <button type="button" class="btn-primary btn-primary--final cta-trigger"><svg class="icon"><use href="#icon-lightning"></use></svg> UNIRME AL RETO</button>
+          <p class="trust-mp trust-mp--center trust-mp--light"><svg class="icon icon-sm" aria-hidden="true"><use href="#icon-check"></use></svg> Pago seguro con Mercado Pago</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-logo">SISTEMA <span>VENTAJA</span></div>
+    <p class="footer-text">Un sistema de entrenamiento de 30 días para atletas que quieren correr, reaccionar y explotar a otro nivel.<br><br>© 2025 Sistema Ventaja. Todos los derechos reservados.</p>
+    <button type="button" class="footer-cta cta-trigger">UNIRME AL RETO</button>
+  </footer>
+
+  <!-- CHECKOUT MODAL -->
+  <div class="checkout-modal" id="checkoutModal" aria-hidden="true">
+    <div class="checkout-modal__backdrop" data-close-modal></div>
+    <div class="checkout-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="checkout-modal__close" type="button" data-close-modal aria-label="Cerrar">&times;</button>
+
+      <div class="checkout-modal__view" id="modalFormView">
+        <div class="checkout-modal__badge">Paso final</div>
+        <h2 class="checkout-modal__title" id="modalTitle">¡Ya casi estás dentro!</h2>
+        <p class="checkout-modal__sub">Completa tus datos y te llevamos al pago seguro en Mercado Pago.</p>
+        <form class="checkout-form" id="checkoutForm" novalidate>
+          <label class="checkout-field">
+            <span>Nombre</span>
+            <input type="text" name="name" autocomplete="name" required placeholder="Tu nombre">
+          </label>
+          <label class="checkout-field">
+            <span>Email</span>
+            <input type="email" name="email" autocomplete="email" required placeholder="tu@email.com">
+          </label>
+          <label class="checkout-field">
+            <span>Edad</span>
+            <input type="number" name="age" min="10" max="99" required placeholder="Ej: 24" inputmode="numeric">
+          </label>
+          <button type="submit" class="btn-cta-large checkout-form__submit">
+            <svg class="icon"><use href="#icon-lightning"></use></svg> CONTINUAR AL PAGO
+          </button>
+        </form>
+        <p class="trust-mp trust-mp--center"><svg class="icon icon-sm"><use href="#icon-check"></use></svg> Pago seguro con Mercado Pago</p>
+      </div>
+
+      <div class="checkout-modal__view checkout-modal__view--success" id="modalSuccessView" hidden>
+        <div class="checkout-modal__success-icon" aria-hidden="true">⚡</div>
+        <h2 class="checkout-modal__title">¡Tu programa está en camino!</h2>
+        <p class="checkout-modal__sub">Redirigiendo al pago seguro...</p>
+        <div class="checkout-modal__loader" aria-hidden="true"></div>
+        <a href="https://mpago.la/2gqKFbG" class="checkout-modal__fallback" id="mpagoFallback" target="_blank" rel="noopener noreferrer">Si no se abre, haz clic aquí para pagar →</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js?v=6" defer></script>
+</body>
+</html>
