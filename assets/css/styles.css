@@ -1108,13 +1108,17 @@ section { padding: 5rem 0; }
 .bonus-counter-label { font-size: .68rem; letter-spacing: .16em; text-transform: uppercase; color: rgba(255,255,255,.45); margin-top: .25rem; font-family: var(--font-display); }
 .bonus-urgency { margin-top: .75rem; color: rgba(255,255,255,.55); font-size: .82rem; display: flex; align-items: center; justify-content: center; gap: .4rem; }
 .bonus-text strong { color: var(--white); }
-.shirt-scarcity {
+.shirt-scarcity,
+.offer-scarcity {
   max-width: 340px;
   margin: 1.75rem auto 0;
   padding-top: .5rem;
   text-align: left;
   position: relative;
   z-index: 2;
+}
+.offer-scarcity {
+  margin-top: 1.5rem;
 }
 .scarcity-remaining {
   margin-top: .55rem;
