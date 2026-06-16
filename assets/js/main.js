@@ -430,7 +430,6 @@ function setupDynamicScarcity() {
   const fill = doc.getElementById('scarcityProgress');
   const takenLabel = doc.getElementById('spotsTakenLabel');
   const spotsLeftBonus = doc.getElementById('spotsLeftBonus');
-  const finalSpots = doc.getElementById('spotsLeftFinal');
   if (!fill) return;
 
   const total = SITE_CONFIG.spotsTotal || 100;
@@ -444,7 +443,6 @@ function setupDynamicScarcity() {
     fill.classList.add('animate');
     if (takenLabel) takenLabel.textContent = `${taken} de ${total} ocupados`;
     if (spotsLeftBonus) spotsLeftBonus.textContent = String(available);
-    if (finalSpots) finalSpots.textContent = String(available);
   };
 
   const animateOnView = () => {
@@ -714,17 +712,14 @@ function boot() {
     ['program', setupProgramPreview],
     ['lines', () => {
       createLines('speedLines', 'speed-line', 10, 70, 260, 1.6, 3.8);
-      createLines('finalLines', 'final-line', 8, 120, 320, 2, 4.5);
     }],
     ['reveal', setupReveal],
     ['sticky', setupStickyCta],
-    ['faq', setupFaq],
     ['founder', setupFounderVideo],
     ['pricing-strikes', setupPricingStrikes],
     ['pricing-reveal', setupPricingReveal],
     ['scarcity', setupDynamicScarcity],
     ['testimonials', setupTestimonialVideos],
-    ['shirt', setupShirtImage],
     ['parallax', setupParallax],
     ['checkout', setupCheckoutModal],
   ];
@@ -741,3 +736,4 @@ function boot() {
 }
 
 boot();
+
